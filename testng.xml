@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<!--   <parameter name="testConfigRelativePath" value="\Projects\GuideWire\TestConfig.xlsx" /> -->
+	
+	<listeners>
+		<listener class-name="com.lti.Listeners.CustomListener" />
+	</listeners>
+	<test thread-count="5" name="Product Portfolio Automation Test">
+		<classes>
+			<class name="com.lti.controller.TestCase" />
+		</classes>
+
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
